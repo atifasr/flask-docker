@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  flask_app:
+    build: /home/atif/Documents/flask_crud/
+    ports:
+      - '5000:5000'
+    environment:
+      # - FLASK_APP=run.py
+      - FLASK_ENV=development
+
+    volumes:
+      - '.:/FLASK_CRUD'
+
+
+      
